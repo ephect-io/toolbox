@@ -2,18 +2,20 @@
     "name": "ephect-io/toolbox",
     "description": "A bunch of scripts to help developing with Ephect framework",
     "type": "library",
+    "homepage": "https://ephect.io",
     "license": "GPL-3.0+",
+    "version": "0.7.2",
+    "authors": [{
+        "name": "David Blanchard",
+        "email": "dpjb@hotmail.fr",
+        "homepage": "https://ephect.io",
+        "role": "Creator"
+    }],
     "autoload": {
         "psr-4": {
             "Ephect\\Toolbox\\": "app/"
         }
     },
-    "authors": [
-        {
-            "name": "David Blanchard",
-            "email": "dpjb@hotmail.fr"
-        }
-    ],
     "minimum-stability": "stable",
     "require": {
         "ephect-io/framework": "dev-featured"
