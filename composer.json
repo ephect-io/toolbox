@@ -1,0 +1,27 @@
+{
+    "name": "ephect-io/toolbox",
+    "description": "A bunch of scripts to help developing with Ephect framework",
+    "type": "library",
+    "license": "GPLv3",
+    "autoload": {
+        "psr-4": {
+            "Ephect\\Toolbox\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Blanchard",
+            "email": "dpjb@hotmail.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ephect-io/framework": "dev-featured"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php egg publish ../..",
+            "npm install"
+        ]
+    }
+}
