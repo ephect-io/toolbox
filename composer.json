@@ -2,7 +2,7 @@
     "name": "ephect-io/toolbox",
     "description": "A bunch of scripts to help developing with Ephect framework",
     "type": "library",
-    "license": "GPLv3",
+    "license": "GPL-3.0+",
     "autoload": {
         "psr-4": {
             "Ephect\\Toolbox\\": "app/"
