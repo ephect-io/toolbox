@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "058fd1c9a171842b4c09bff90451da40",
+    "content-hash": "955448ae44a7af21509a9b4ffa193537",
     "packages": [
         {
             "name": "ephect-io/framework",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "363b353214148f0c5251b33be9039384f152e129"
+                "reference": "a567783ca1f105f63d0f132c06bcbf540381ea40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/363b353214148f0c5251b33be9039384f152e129",
-                "reference": "363b353214148f0c5251b33be9039384f152e129",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/a567783ca1f105f63d0f132c06bcbf540381ea40",
+                "reference": "a567783ca1f105f63d0f132c06bcbf540381ea40",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
                 "issues": "https://github.com/ephect-io/framework/issues",
                 "source": "https://github.com/ephect-io/framework/tree/featured"
             },
-            "time": "2024-07-21T23:35:00+00:00"
+            "time": "2024-07-27T08:12:23+00:00"
         }
     ],
     "packages-dev": [],

@@ -25,5 +25,8 @@
             "php egg publish ../..",
             "npm install"
         ]
-    }
+    },
+    "bin": [
+        "bin/publisher.sh"
+    ]
 }

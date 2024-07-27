@@ -14,9 +14,15 @@ class Lib extends AbstractCommandLib
         $source = realpath($source . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'Assets');
         Console::writeLine("Source: %s", $source);
 
+        $vendorPos = strpos( SITE_ROOT, 'vendor');
+        $vendorPath = SITE_ROOT;
+
+        if($vendorPos > -1) {
+            $vendorPath = substr(SITE_ROOT, 0, $vendorPos - 1);
+        }
         $allFiles = File::walkTreeFiltered($source);
         foreach ($allFiles as $file) {
-            Console::writeLine("Publishing file: %s", $file);
+            Console::writeLine("Publishing file: %s%s", $vendorPath, $file);
         }
     }
 }
