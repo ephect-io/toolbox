@@ -27,6 +27,6 @@
         ]
     },
     "bin": [
-        "bin/publisher.sh"
+        "bin/epehct-toolbox_install.sh"
     ]
 }

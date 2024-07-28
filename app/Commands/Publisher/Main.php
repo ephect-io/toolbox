@@ -6,7 +6,7 @@ use Ephect\Framework\CLI\Console;
 use Ephect\Framework\Commands\AbstractCommand;
 use Ephect\Framework\Commands\Attributes\CommandDeclaration;
 
-#[CommandDeclaration(verb: "publish")]
+#[CommandDeclaration(verb: "install", subject: "toolbox")]
 #[CommandDeclaration(desc: "Publish toolbox scripts files in Ephect application root")]
 class Main extends AbstractCommand
 {
