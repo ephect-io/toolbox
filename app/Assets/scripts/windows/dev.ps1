@@ -4,8 +4,9 @@ param(
 
 $CWD = Get-Location
 $DOC_ROOT = Get-Content "$CWD\config\document_root"
+$APP_DIR = Get-Content "$CWD\config\app"
 $APP_JS = "dist\app.min.js"
-$ASSETS_DIR = "app\Assets"
+$ASSETS_DIR = "$APP_DIR\Assets"
 $MODULES = @(
     "node_modules\human-writes\dist\web\human-writes.min.js"
 )

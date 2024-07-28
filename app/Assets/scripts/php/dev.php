@@ -4,6 +4,7 @@
 $target = $argv[1] ?? null;
 $cwd = getcwd();
 $docroot = trim(file_get_contents($cwd . '/config/document_root'));
+$app = trim(file_get_contents($cwd . '/config/app'));
 
 if (empty($target)) {
     echo "Target is missing.";
@@ -23,7 +24,7 @@ if ($target === 'all') {
 
     // Copy the built files to the document root
     copy('dist/app.min.js', $docroot);
-    copyDirectory('app/Assets/', $docroot);
+    copyDirectory($app . '/Assets/', $docroot);
 
     // Create the 'modules' directory if it doesn't exist
     $modulesDir = $docroot . '/modules';

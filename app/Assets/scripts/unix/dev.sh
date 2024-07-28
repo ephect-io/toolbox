@@ -3,8 +3,9 @@
 TARGET=$1;
 CWD=$(pwd);
 DOC_ROOT=$(head $CWD/config/document_root)
+APP_DIR=$(head $CWD/config/app)
 APP_JS=dist/app.min.js
-ASSETS_DIR=app/Assets
+ASSETS_DIR=$APP_DIR/Assets
 MODULES=$(cat << LIST
 node_modules/human-writes/dist/web/human-writes.min.js
 LIST);

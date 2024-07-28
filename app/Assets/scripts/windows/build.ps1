@@ -28,8 +28,9 @@ param(
 #$TARGET = $args[0]
 $CWD = (Get-Location).Path
 $DOC_ROOT = (Get-Content "$CWD/config/document_root" | Select-Object -First 1).Trim()
+$APP_DIR = (Get-Content "$CWD/config/app" | Select-Object -First 1).Trim()
 $APP_JS = "dist/app.min.js"
-$ASSETS_DIR = "app/Assets"
+$ASSETS_DIR = "$APP_DIR/Assets"
 $MODULES = @(
     "node_modules/human-writes/dist/web/human-writes.min.js"
 )
