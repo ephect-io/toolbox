@@ -29,9 +29,9 @@ class Lib extends AbstractCommandLib
             if(is_file($vendorPath . $file)) {
                 $dirname = dirname($vendorPath . $file);
                 $filename = pathinfo($file, PATHINFO_FILENAME);
-                copy($file, $dirname . DIRECTORY_SEPARATOR . 'ephect-toolbox_' . $filename);
+                copy($source . $file, $dirname . DIRECTORY_SEPARATOR . 'ephect-toolbox_' . $filename);
             } else {
-                copy($file, $vendorPath . $file);
+                copy($source . $file, $vendorPath . $file);
             }
         }
     }
