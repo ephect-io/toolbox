@@ -20,12 +20,6 @@
     "require": {
         "ephect-io/framework": "dev-featured"
     },
-    "scripts": {
-        "post-install-cmd": [
-            "php egg publish ../..",
-            "npm install"
-        ]
-    },
     "bin": [
         "bin/epehct-io_toolbox_install.sh"
     ]
