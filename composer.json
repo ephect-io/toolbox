@@ -27,6 +27,6 @@
         ]
     },
     "bin": [
-        "bin/epehct-toolbox_install.sh"
+        "bin/epehct-io_toolbox_install.sh"
     ]
 }
