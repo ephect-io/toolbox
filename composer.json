@@ -18,7 +18,7 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "ephect-io/framework": "dev-featured"
+        "ephect-io/framework": "dev-develop"
     },
     "bin": [
         "bin/epehct-io_toolbox_install.sh"

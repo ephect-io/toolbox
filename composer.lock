@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "955448ae44a7af21509a9b4ffa193537",
+    "content-hash": "a78b4424816b617ec0c43e444be2b66a",
     "packages": [
         {
             "name": "ephect-io/framework",
-            "version": "dev-featured",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ephect-io/framework.git",
-                "reference": "f7ab6f0d0eef856160c5dc5bb8b9b9664f57efbb"
+                "reference": "1ecc5530f7b341eec4c68bd5833c373b7409d2ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ephect-io/framework/zipball/f7ab6f0d0eef856160c5dc5bb8b9b9664f57efbb",
-                "reference": "f7ab6f0d0eef856160c5dc5bb8b9b9664f57efbb",
+                "url": "https://api.github.com/repos/ephect-io/framework/zipball/1ecc5530f7b341eec4c68bd5833c373b7409d2ce",
+                "reference": "1ecc5530f7b341eec4c68bd5833c373b7409d2ce",
                 "shasum": ""
             },
             "require": {
@@ -31,6 +31,11 @@
                 "php": "^8.2"
             },
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ephect\\": "Ephect/"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0+"
@@ -47,9 +52,9 @@
             "homepage": "https://ephect.io",
             "support": {
                 "issues": "https://github.com/ephect-io/framework/issues",
-                "source": "https://github.com/ephect-io/framework/tree/featured"
+                "source": "https://github.com/ephect-io/framework/tree/develop"
             },
-            "time": "2024-07-28T20:35:14+00:00"
+            "time": "2024-08-19T07:59:01+00:00"
         }
     ],
     "packages-dev": [],
