@@ -127,7 +127,7 @@ class Lib extends AbstractCommandLib
         string $version,
     )
     {
-        $templatesDir = MODULE_SRC_DIR . 'Templates' . DIRECTORY_SEPARATOR;
+        $templatesDir = SRC_ROOT . 'Templates' . DIRECTORY_SEPARATOR;
         $destDir = siteRoot();
 
         $snakeCasePackageName = str_replace('/', '_', $packageName);
