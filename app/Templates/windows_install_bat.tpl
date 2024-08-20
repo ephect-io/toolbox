@@ -1,4 +1,4 @@
 @echo off
 
-cd vendor\vendor_name\package_name
+cd vendor\{{windowsPackageFolder}}
 php use install:plugin %cd% %1 %2

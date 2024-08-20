@@ -1,12 +1,12 @@
 {
-    "name": "vendor_name/package_name",
+    "name": "{{fqPackageName}}",
     "type": "library",
     "homepage": "https://example.com",
     "license": "GPL-3.0+",
-    "version": "1.0.0",
+    "version": "{{version}}",
     "autoload": {
         "psr-4": {
-            "VendorName\\PackageName\\": "src/"
+            "{{fqPackageNamespace}}": "src/"
         }
     },
     "authors": [
@@ -20,7 +20,7 @@
         "ephect-io/framework": "dev-develop"
     },
     "bin": [
-        "bin/vendor-name_package-name_install.sh",
-        "bin/vendor-name_package-name_install.bat"
+        "bin/{{snakeCasePackageName}}_install.sh",
+        "bin/{{snakeCasePackageName}}_install.bat"
     ]
 }
