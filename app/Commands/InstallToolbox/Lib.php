@@ -161,7 +161,7 @@ class Lib extends AbstractCommandLib
 
         $windowsScriptTemplate = new TemplateMaker($templatesDir . "windows_install_bat.tpl");
         $windowsScriptTemplate->make([
-            'unixPackageFolder' => $packageName,
+            'windowsPackageFolder' => str_replace('/', '\\', $packageName),
         ]);
         $windowsScriptTemplate->save($destDir . 'bin' . DIRECTORY_SEPARATOR . $snakeCasePackageName . "_install.bat");
 
