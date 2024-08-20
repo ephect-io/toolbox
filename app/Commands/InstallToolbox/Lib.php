@@ -13,25 +13,20 @@ class Lib extends AbstractCommandLib
     {
         $source = realpath($source . DIRECTORY_SEPARATOR . CONFIG_APP . DIRECTORY_SEPARATOR . 'Assets');
         Console::writeLine("Source: %s", $source);
+        $siteRoot = siteRoot();
 
-        $vendorPos = strpos( SITE_ROOT, 'vendor');
-        $vendorPath = SITE_ROOT;
-
-        if($vendorPos > -1) {
-            $vendorPath = substr(SITE_ROOT, 0, $vendorPos - 1);
-        }
         $allFiles = File::walkTreeFiltered($source);
         foreach ($allFiles as $file) {
-            Console::writeLine("Publishing file: %s%s", $vendorPath, $file);
-            if(!is_file($vendorPath . $file)) {
-                File::safeMkDir(dirname($vendorPath . $file));
+            Console::writeLine("Publishing file: %s%s", $siteRoot, $file);
+            if(!is_file($siteRoot . $file)) {
+                File::safeMkDir(dirname($siteRoot . $file));
             }
-            if(is_file($vendorPath . $file)) {
-                $dirname = dirname($vendorPath . $file);
+            if(is_file($siteRoot . $file)) {
+                $dirname = dirname($siteRoot . $file);
                 $basename = pathinfo($file, PATHINFO_BASENAME);
                 copy($source . $file, $dirname . DIRECTORY_SEPARATOR . 'ephect-toolbox_' . $basename);
             } else {
-                copy($source . $file, $vendorPath . $file);
+                copy($source . $file, $siteRoot . $file);
             }
         }
     }
