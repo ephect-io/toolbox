@@ -8,7 +8,6 @@ use Ephect\Framework\CLI\Enums\ConsoleOptionsEnum;
 use Ephect\Framework\Commands\AbstractCommandLib;
 use Ephect\Framework\Templates\TemplateMaker;
 use Ephect\Framework\Utils\File;
-use Ephect\Plugins\WebComponent\Builder\Compiler;
 use Exception;
 
 class Lib extends AbstractCommandLib
