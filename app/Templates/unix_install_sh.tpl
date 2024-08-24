@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
 cd vendor/{{unixPackageFolder}}
-php use install:plugin $(pwd) $1 $2
+php use install:module $(pwd) $1 $2
