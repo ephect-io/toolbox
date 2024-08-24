@@ -128,6 +128,7 @@ class Lib extends AbstractCommandLib
     {
         $templatesDir = SRC_ROOT . 'Templates' . DIRECTORY_SEPARATOR;
         $destDir = siteRoot();
+        $destSrcDir = siteSrcPath();
 
         $snakeCasePackageName = str_replace('/', '_', $packageName);
 
@@ -151,6 +152,13 @@ class Lib extends AbstractCommandLib
             'version' => $version,
         ]);
         $manifestPhpTemplate->save($destDir . REL_CONFIG_DIR . "manifest.php");
+
+        File::safeMkDir($destSrcDir . "Lib");
+        $manifestPhpTemplate = new TemplateMaker($templatesDir . "Common.php.tpl");
+        $manifestPhpTemplate->make([
+            'namespace' => $namespace,
+        ]);
+        $manifestPhpTemplate->save($destSrcDir . "Lib" . DIRECTORY_SEPARATOR . "Common.php");
 
         $unixScriptTemplate = new TemplateMaker($templatesDir . "unix_install_sh.tpl");
         $unixScriptTemplate->make([
