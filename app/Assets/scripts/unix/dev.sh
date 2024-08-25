@@ -59,7 +59,7 @@ then
     echo;
 
     echo "Building the app...";
-    php ./egg build
+    php ./use build
 
 fi
 

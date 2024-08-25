@@ -54,7 +54,7 @@ if ($TARGET -eq "all") {
     Write-Host ""
 
     Write-Host "Building the app..."
-    php .\egg build
+    php .\use build
 }
 
 exit 0

@@ -4,18 +4,22 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 import path from "path";
 import url from "url";
+import fs from "fs";
 
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const CWD = process.cwd();
+const APP_DIR = fs.readFileSync(`${CWD}/config/app`, 'utf8').trim();
+
 
 gulp.task("default", () =>
   gulp
-    .src("./src/JavaScripts/index.js")
+    .src(`./${APP_DIR}/JavaScripts/index.js`)
     .pipe(
       webpack({
         // Any configuration options...
         // Path to your entry point. From this file Webpack will begin its work
-        entry: "./src/JavaScripts/index.js",
+        entry: `./${APP_DIR}/JavaScripts/index.js`,
 
         // Path and filename of your result bundle.
         // Webpack will bundle all JavaScript into this file

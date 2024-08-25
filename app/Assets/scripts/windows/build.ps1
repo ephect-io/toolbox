@@ -87,7 +87,7 @@ if ($TARGET -eq "all") {
 
     Write-Host "Building the app..."
     # Execute php egg build (assuming php and egg are available)
-    php ./egg build
+    php ./use build
 }
 
 exit 0
